@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DTK6 Flight Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="mode-normal">
+  <div id="app">
+    <header id="header">
+      <div class="brand">DTK6 DEPARTURE INFORMATION</div>
+      <div class="live">● LIVE</div>
+      <div id="offer">--:-- OFFER のドライバー様</div>
+    </header>
+
+    <main id="main">
+      <section id="clockView" class="view active">
+        <canvas id="clockCanvas"></canvas>
+        <div id="digitalClock">--:--:--</div>
+      </section>
+
+      <section id="slideView" class="view">
+        <img id="slideImage" src="" alt="">
+        <div id="slidePlaceholder">
+          <div id="slideTitle">IMAGE</div>
+          <div id="slideMessage">PowerPoint画像 準備中</div>
+        </div>
+      </section>
+
+      <section id="messageView" class="view">
+        <div id="messageStatus">CHECK-IN</div>
+        <div id="messageText">受付開始</div>
+      </section>
+    </main>
+
+    <aside id="infoPanel">
+      <div class="infoBlock"><div class="label">STATUS</div><div id="status">NORMAL</div></div>
+      <div class="infoBlock"><div class="label">OTD LIMIT</div><div id="otdTime">--:--</div></div>
+      <div class="infoBlock"><div class="label">REMAINING</div><div id="remaining">--:--</div></div>
+    </aside>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="clock.js"></script>
+  <script src="scheduler.js"></script>
+  <script src="display.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
