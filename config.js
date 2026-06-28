@@ -27,8 +27,8 @@ const CONFIG = {
   demoStartTime: "17:04:50",
 
   slides: [
-    { src: "images/imageA.png", title: "All In All Out", message: "降車・出発は横列ごとに" },
-    { src: "images/imageB.png", title: "正しく集荷して、エラーゼロへ！", message: "DTK6からのお願い" }
+    { src: "images/imageA.png", },
+    { src: "images/imageB.png", }
   ],
 
   messages: {
